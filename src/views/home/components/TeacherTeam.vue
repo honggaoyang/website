@@ -111,12 +111,11 @@ export default {
 }
 .moreBtn {
   width: 133px;
-  height: 36px;
+  padding: 10px 0;
   border: 1px solid;
   border-color: #b09c70;
   color: #b09c70;
   text-align: center;
-  line-height: 36px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   cursor: pointer;

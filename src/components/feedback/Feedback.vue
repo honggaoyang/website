@@ -43,13 +43,12 @@ export default {};
 }
 .subBtn a {
   width: 100px;
-  height: 36px;
+  padding: 8px 0;
   border: 1px solid;
   border-color: #b09c70;
   background-color: #f5f5f5;
   color: #b09c70;
   text-align: center;
-  line-height: 36px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: 0.3s;

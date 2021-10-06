@@ -74,19 +74,17 @@ export default {
   bottom: -20px;
   z-index: -1;
 }
-.aboCon .btn {
-  width: 125px;
-  height: 38px;
+.aboCon .btn { 
   background-color: #b09c70;
   color: #ffffff;
-  text-align: center;
-  line-height: 38px;
+  text-align: center; 
   font-weight: bold;
   font-size: 14px;
   position: absolute;
   bottom: 70px;
   left: -62px;
-  cursor: pointer;
+  cursor: pointer; 
+  padding: 8px 40px;
 }
 .aboItems {
   display: -webkit-box;

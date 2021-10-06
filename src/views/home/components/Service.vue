@@ -102,10 +102,9 @@ export default {
 }
 .serText div {
   width: 96px;
-  height: 32px;
+  padding: 7px 0;
   background-color: #b09c70;
   text-align: center;
-  line-height: 32px;
   color: #f5f5f5;
   cursor: pointer;
   -webkit-user-select: none;

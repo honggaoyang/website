@@ -22,17 +22,21 @@ export default {};
 }
 
 .homeBanner h1 {
+  width: 100%;
+  text-align: center;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-size: 6vw;
+  font-size: 70px;
   color: #b09c70;
 }
 .homeBanner h6 {
   position: absolute;
+  width: 100%;
+  text-align: center;
   left: 50%;
   bottom: 80px;
   -webkit-transform: translate(-50%, -50%);

@@ -93,7 +93,7 @@ export default {
     z-index: 20;
   }
   .burger .fa-close {
-    color: #aaaaaa;
+    color: #ffffff;
   }
 
   .navBar.open .nav_menu {
@@ -116,11 +116,8 @@ export default {
   }
   .navBar.open .nav_menu a {
     color: #fff;
-    border-bottom: 1px solid var(--text-color-light-gray);
     margin: 0;
-    padding: 0 20px;
-    height: 60px;
-    line-height: 60px;
+    padding: 16px 20px;
     border-bottom: 1px solid #343434;
   }
 

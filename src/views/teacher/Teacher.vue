@@ -207,5 +207,8 @@ export default {
   .teaCon .infoBox span {
     text-align: center;
   }
+  .teaCon .imgBox .line {
+    display: none;
+  }
 }
 </style>

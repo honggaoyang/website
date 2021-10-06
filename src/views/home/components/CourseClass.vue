@@ -75,12 +75,11 @@ export default {
 }
 .moreBtn {
   width: 133px;
-  height: 36px;
+  padding: 10px 0;
   border: 1px solid;
   border-color: #b09c70;
   color: #b09c70;
-  text-align: center;
-  line-height: 36px;
+  text-align: center; 
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   cursor: pointer;
@@ -88,6 +87,7 @@ export default {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+ 
 }
 .moreBtn:hover {
   background-color: #b09c70;

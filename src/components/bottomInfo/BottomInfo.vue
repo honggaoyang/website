@@ -26,7 +26,7 @@
         <i class="fa fa-map-marker"></i>
         <i class="fa fa-envelope"></i>
       </div>
-      <p>版权所有： 003模特</p>
+      <p>版权所有： ANS</p>
     </div>
   </div>
 </template>
@@ -128,7 +128,7 @@ export default {
   background-color: #333333;
   width: 30px;
   height: 30px;
-  line-height: 30px;
+  padding-top: 6px;
   border-radius: 50%;
   font-size: 16px;
   margin-right: 50px;
