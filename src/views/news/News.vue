@@ -86,7 +86,7 @@ export default {
   margin: auto;
 }
 .newsCon .box {
-  border-bottom: 1px solid #F5F5F5;
+  border-bottom: 1px solid #f5f5f5;
   width: 90%;
   margin: auto auto 50px auto;
 }
@@ -104,19 +104,24 @@ export default {
 }
 .newsCon .box p {
   line-height: 24px;
-  color: #AAAAAA;
+  color: #aaaaaa;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   word-break: break-all;
   overflow: hidden;
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
 .newsCon .box .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 30px 0 80px;
-  color: #AAAAAA;
+  color: #aaaaaa;
   font-size: 12px;
 }
 .newsCon .page {
@@ -124,10 +129,10 @@ export default {
   text-align: center;
 }
 .newsCon .page a {
-  border: 1px solid #AAAAAA;
+  border: 1px solid #aaaaaa;
   padding: 8px 15px;
   border-radius: 3px;
-  color: #AAAAAA;
+  color: #aaaaaa;
   text-decoration: none;
 }
 </style>

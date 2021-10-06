@@ -82,8 +82,12 @@ export default {
 
 <style scoped>
 .couBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   padding: 0 20px;
 }
@@ -91,6 +95,7 @@ export default {
   width: 263px;
   height: 361px;
   margin-bottom: 70px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 .couBox .box img {

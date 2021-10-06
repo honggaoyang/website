@@ -44,12 +44,16 @@ export default {
 
 <style scoped>
 .aboCon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center; /*垂直居中*/
 }
 .aboCon .lt {
   width: 50%;
-  color: #AAAAAA;
+  color: #aaaaaa;
   padding: 40px;
   line-height: 25px;
   text-align: justify;
@@ -74,7 +78,7 @@ export default {
   width: 125px;
   height: 38px;
   background-color: #b09c70;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   line-height: 38px;
   font-weight: bold;
@@ -85,13 +89,20 @@ export default {
   cursor: pointer;
 }
 .aboItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 80px 0;
 }
 .aboItems .item {
   padding: 20px 20px;
   width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
 }
@@ -105,13 +116,16 @@ export default {
 }
 
 .aboItems .item span:nth-child(3) {
-  color: #AAAAAA;
+  color: #aaaaaa;
   line-height: 25px;
 }
 
 /* 小于768 */
 @media (max-width: 768px) {
   .aboCon {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
   .aboCon .lt {
@@ -136,6 +150,7 @@ export default {
     left: 30px;
   }
   .aboItems {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 30px 0;
   }

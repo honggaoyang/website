@@ -77,9 +77,17 @@ export default {
 .footCont {
   max-width: 1200px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .ftItem h6 {
@@ -87,14 +95,14 @@ export default {
   line-height: 50px;
 }
 .ftItem h6 a {
-  color: #F5F5F5;
+  color: #f5f5f5;
   text-decoration: none;
 }
 .ftItem ul li {
   list-style: none;
 }
 .ftItem ul li a {
-  color: #F5F5F5;
+  color: #f5f5f5;
   text-decoration: none;
   height: 40px;
   line-height: 40px;
@@ -107,7 +115,7 @@ export default {
 .copyright {
   width: 100%;
   height: 110px;
-  color: #F5F5F5;
+  color: #f5f5f5;
   background-color: black;
   text-align: center;
   padding: 20px 0;
@@ -124,6 +132,8 @@ export default {
   border-radius: 50%;
   font-size: 16px;
   margin-right: 50px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 .copyright .icon i:nth-child(3) {
@@ -132,7 +142,7 @@ export default {
 .copyright .icon i:hover {
   cursor: pointer;
   background-color: #b09c70;
-  color: #F5F5F5;
+  color: #f5f5f5;
 }
 
 /* 小于580 */
@@ -141,7 +151,12 @@ export default {
     max-width: 580px;
   }
   .footCont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 }

@@ -52,14 +52,20 @@ export default {
   margin: auto;
   padding: 0 20px;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   z-index: 200;
   top: 0;
   left: 0;
 }
-.nav_logo a{
+.nav_logo a {
   color: #ffffff;
   font-weight: 700;
   font-size: 24px;
@@ -91,7 +97,12 @@ export default {
   }
 
   .navBar.open .nav_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: right;
     position: absolute;
@@ -100,6 +111,7 @@ export default {
     width: 50vw;
     background-color: #2b2b2b;
     opacity: 0;
+    -webkit-animation: slideDown 0.5s ease-out 0s 1 normal forwards;
     animation: slideDown 0.5s ease-out 0s 1 normal forwards;
   }
   .navBar.open .nav_menu a {
@@ -110,8 +122,6 @@ export default {
     height: 60px;
     line-height: 60px;
     border-bottom: 1px solid #343434;
-    /* opacity: 0;
-    animation: showMenu 0.4s ease-out 0.5s 1 normal forwards; */
   }
 
   .navBar.open .nav_logo {
@@ -122,6 +132,16 @@ export default {
     background-color: #aaaaaa;
   }
   /* 导航列表 */
+  @-webkit-keyframes slideDown {
+    from {
+      right: -55%;
+      opacity: 0;
+    }
+    to {
+      right: 0;
+      opacity: 1;
+    }
+  }
   @keyframes slideDown {
     from {
       right: -55%;
@@ -132,16 +152,5 @@ export default {
       opacity: 1;
     }
   }
-  /* 导航菜单 */
-  /* @keyframes showMenu {
-    from {
-      opacity: 0;
-      transform: translateX(-6px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  } */
 }
 </style>

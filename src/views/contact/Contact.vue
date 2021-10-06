@@ -69,6 +69,8 @@ export default {
   padding-bottom: 50px;
 }
 .contactCon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   position: absolute;
@@ -77,8 +79,9 @@ export default {
 .contactCon .lfInfo {
   width: 50%;
   background-color: #444444;
-  color: #F5F5F5;
+  color: #f5f5f5;
   padding: 70px 125px;
+  -webkit-box-shadow: 0px 0px 10px 1px #6d6565;
   box-shadow: 0px 0px 10px 1px #6d6565;
 }
 .contactCon .lfInfo h1 {
@@ -96,7 +99,7 @@ export default {
   margin: 20px 0 35px;
 }
 .contactCon .lfInfo a {
-  color: #F5F5F5;
+  color: #f5f5f5;
   font-size: 16px;
   display: block;
   padding: 5px 0;
@@ -109,10 +112,13 @@ export default {
   padding-left: 10px;
 }
 .contactCon .rtForm {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   background-color: #b09c70;
-  color: #F5F5F5;
+  color: #f5f5f5;
   padding: 40px 0px;
+  -webkit-box-shadow: 0px 0px 10px 1px #6d6565;
   box-shadow: 0px 0px 10px 1px #6d6565;
 }
 .contactCon .rtForm .title {
@@ -131,7 +137,12 @@ export default {
     padding-top: 20px;
   }
   .contactCon {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
     width: 90%;
     position: relative;
@@ -143,8 +154,9 @@ export default {
     margin-bottom: 20px;
     width: 100%;
     background-color: #444444;
-    color: #F5F5F5;
+    color: #f5f5f5;
     padding: 20px;
+    -webkit-box-shadow: 0px 0px 10px 1px #6d6565;
     box-shadow: 0px 0px 10px 1px #6d6565;
   }
   .contactCon .lfInfo h1 {
@@ -162,10 +174,13 @@ export default {
     margin: 20px 0 35px;
   }
   .contactCon .rtForm {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     background-color: #b09c70;
-    color: #F5F5F5;
+    color: #f5f5f5;
     padding: 40px 0px;
+    -webkit-box-shadow: 0px 0px 10px 1px #6d6565;
     box-shadow: 0px 0px 10px 1px #6d6565;
   }
   .contactCon .rtForm .title {

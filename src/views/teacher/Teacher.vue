@@ -64,12 +64,20 @@ export default {
 .teaCon {
   max-width: 950px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin-bottom: 100px;
 }
 /* 循环下标是奇数css */
 .teaCon.odd {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 .teaCon.odd .infoBox h3 {
@@ -114,9 +122,18 @@ export default {
   z-index: 9;
 }
 .teaCon .infoBox {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 20px;
 }
@@ -129,7 +146,7 @@ export default {
   padding: 5px 0 30px;
 }
 .teaCon .infoBox p {
-  color: #AAAAAA;
+  color: #aaaaaa;
   text-align: justify;
   line-height: 25px;
 }
@@ -138,11 +155,17 @@ export default {
 @media (max-width: 768px) {
   .teaCon {
     max-width: 768px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin-bottom: 50px;
   }
   /* 循环下标是奇数css */
   .teaCon.odd {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .teaCon.odd .infoBox h3 {

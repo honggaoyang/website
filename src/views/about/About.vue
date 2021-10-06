@@ -74,12 +74,12 @@ export default {
   left: 50px;
 }
 .aboCon .aboImg .tit p:nth-child(1) {
-  color: #F5F5F5;
+  color: #f5f5f5;
   font-size: 30px;
   font-weight: bold;
 }
 .aboCon .aboImg .tit p:nth-child(2) {
-  color: #F5F5F5;
+  color: #f5f5f5;
   font-size: 18px;
   margin-top: 10px;
 }
@@ -104,7 +104,7 @@ export default {
   height: 100%;
 }
 article {
-  color: #AAAAAA;
+  color: #aaaaaa;
   line-height: 30px;
   margin-top: 30px;
   max-width: 850px;
@@ -112,12 +112,19 @@ article {
   margin-top: 60px;
 }
 .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 80px;
 }
 .items .item {
   width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
   padding: 20px 20px;
@@ -132,7 +139,7 @@ article {
 }
 
 .items .item span:nth-child(3) {
-  color: #AAAAAA;
+  color: #aaaaaa;
   line-height: 25px;
 }
 
@@ -172,12 +179,18 @@ article {
     text-align: justify;
   }
   .items {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-top: 30px;
   }
   .items .item {
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
   }
@@ -191,7 +204,7 @@ article {
   }
 
   .items .item span:nth-child(3) {
-    color: #AAAAAA;
+    color: #aaaaaa;
     line-height: 25px;
   }
 }

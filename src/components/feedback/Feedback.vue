@@ -21,11 +21,11 @@ export default {};
 .formInfo textarea {
   width: 100%;
   border: 1px solid;
-  border-color: #F5F5F5;
+  border-color: #f5f5f5;
   outline: none;
   height: 40px;
   background-color: #b09c70;
-  color: #F5F5F5;
+  color: #f5f5f5;
   margin-bottom: 20px;
   padding: 10px;
 }
@@ -34,7 +34,11 @@ export default {};
   resize: none;
 }
 .subBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 .subBtn a {
@@ -42,18 +46,21 @@ export default {};
   height: 36px;
   border: 1px solid;
   border-color: #b09c70;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   color: #b09c70;
   text-align: center;
   line-height: 36px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
   display: block;
   text-decoration: none;
 }
 .subBtn a:hover {
   background-color: #d2b985;
-  color: #F5F5F5;
+  color: #f5f5f5;
 }
 
 /* 小于768 */

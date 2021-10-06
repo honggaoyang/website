@@ -50,9 +50,15 @@ export default {};
 <style scoped>
 .intro {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-bottom: 80px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .intro-lf {
@@ -68,14 +74,18 @@ export default {};
   color: #333333;
 }
 .intro-lf .introTtems {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: center;
   margin: 35px 0;
 }
 .intro-lf .introTtems .introTtem {
   width: 30%;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   padding-top: 20px;
 }
 .intro-lf .introTtems .introTtem .icon i {
@@ -94,7 +104,7 @@ export default {};
   width: 100%;
   height: 1px;
   border: 1px dashed;
-  border-color: #AAAAAA;
+  border-color: #aaaaaa;
 }
 .intro-lf .introTtems .introTtem .event {
   height: 50px;
@@ -116,6 +126,9 @@ export default {};
 /* 1200px */
 @media (max-width: 1200px) {
   .intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
   .intro-lf {

@@ -64,12 +64,16 @@ export default {
 }
 
 .slickBox {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 50px 50px;
 }
 
 .stubox {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 0 150px;
 }
@@ -79,6 +83,7 @@ export default {
   border-radius: 50%;
   border: 2px solid #b09c70;
   padding: 8px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 .stuText {
@@ -89,7 +94,7 @@ export default {
   font-size: 18px;
 }
 .stuText p {
-  color: #AAAAAA;
+  color: #aaaaaa;
   font-size: 14px;
   margin: 15px 0;
 }
@@ -101,6 +106,9 @@ export default {
     margin: auto;
   }
   .stubox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding: 0;
   }

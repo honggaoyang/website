@@ -53,15 +53,19 @@ export default {
   padding-bottom: 50px;
 }
 .news {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .new {
   width: 30%;
   border-right: 1px solid;
-  border-right-color: #AAAAAA;
+  border-right-color: #aaaaaa;
   padding: 0 40px;
 }
 .new:last-child {
@@ -74,11 +78,12 @@ export default {
   overflow: hidden;
   width: 100%;
   white-space: nowrap;
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
 .new .new-info {
   font-size: 14px;
-  color: #AAAAAA;
+  color: #aaaaaa;
   text-align: left;
   font-weight: normal;
   font-style: normal;
@@ -94,7 +99,7 @@ export default {
 }
 .new .new-date {
   font-size: 12px;
-  color: #AAAAAA;
+  color: #aaaaaa;
   line-height: 30px;
 }
 
@@ -106,14 +111,17 @@ export default {
   color: #b09c70;
   text-align: center;
   line-height: 36px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   cursor: pointer;
   margin: 50px auto 0 auto;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 .moreBtn:hover {
   background-color: #b09c70;
-  color: #F5F5F5;
+  color: #f5f5f5;
 }
 
 /* 小于768 */

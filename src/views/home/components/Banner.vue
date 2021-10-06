@@ -25,6 +25,8 @@ export default {};
   position: absolute;
   left: 50%;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-size: 6vw;
   color: #b09c70;
@@ -33,9 +35,11 @@ export default {};
   position: absolute;
   left: 50%;
   bottom: 80px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-size: 28px;
   font-weight: 400;
-  color: #F5F5F5;
+  color: #f5f5f5;
 }
 </style>

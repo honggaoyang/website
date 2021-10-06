@@ -50,12 +50,15 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped> 
 .couCon {
   padding-bottom: 50px;
 }
 .couBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 .couBox div {
@@ -78,14 +81,17 @@ export default {
   color: #b09c70;
   text-align: center;
   line-height: 36px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   cursor: pointer;
   margin: 50px auto 0 auto;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 .moreBtn:hover {
   background-color: #b09c70;
-  color: #F5F5F5;
+  color: #f5f5f5;
 }
 
 /* 小于1100*/
@@ -93,7 +99,10 @@ export default {
   .couBox {
     width: 90%;
     margin: auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   .couBox div {

@@ -76,7 +76,11 @@ export default {
   margin: auto;
 }
 .serbox {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .serbox img {
@@ -92,7 +96,7 @@ export default {
   font-size: 18px;
 }
 .serText p {
-  color: #AAAAAA;
+  color: #aaaaaa;
   font-size: 14px;
   margin: 25px 0 35px;
 }
@@ -102,8 +106,11 @@ export default {
   background-color: #b09c70;
   text-align: center;
   line-height: 32px;
-  color: #F5F5F5;
+  color: #f5f5f5;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -113,6 +120,9 @@ export default {
     width: 80%;
   }
   .serbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .serbox div:nth-child(1) {

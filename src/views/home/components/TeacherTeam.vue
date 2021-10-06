@@ -52,12 +52,16 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped> 
 .teaCon {
   padding-bottom: 50px;
 }
 .teaBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .teaBox .teaItem {
@@ -75,23 +79,34 @@ export default {
   position: absolute;
   bottom: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0 15px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: #b09c70;
   font-weight: 500;
 }
 .teaBox .info .info-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .teaBox .info .info-cont .name {
-  color: #F5F5F5;
+  color: #f5f5f5;
   font-weight: bold;
 }
 .teaBox .info .toDetail:hover {
-  color: #F5F5F5;
+  color: #f5f5f5;
   cursor: pointer;
 }
 .moreBtn {
@@ -102,14 +117,17 @@ export default {
   color: #b09c70;
   text-align: center;
   line-height: 36px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   cursor: pointer;
   margin: 50px auto 0 auto;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 .moreBtn:hover {
   background-color: #b09c70;
-  color: #F5F5F5;
+  color: #f5f5f5;
 }
 
 /* 小于768 */
@@ -117,6 +135,7 @@ export default {
   .teaBox {
     width: 90%;
     margin: auto;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   .teaBox .teaItem {
