@@ -136,11 +136,13 @@ article {
   color: #333333;
   font-weight: bold;
   line-height: 50px;
+  display: inline-block;
 }
 
 .items .item span:nth-child(3) {
   color: #aaaaaa;
   line-height: 25px;
+  display: inline-block;
 }
 
 /* 小于768 */

@@ -88,6 +88,7 @@ export default {
 }
 .stuText {
   padding: 30px;
+  max-width: 680px;
 }
 .stuText h3 {
   color: #333333;
@@ -97,6 +98,7 @@ export default {
   color: #aaaaaa;
   font-size: 14px;
   margin: 15px 0;
+  line-height: 26px;
 }
 
 /* 小于1100*/

@@ -21,9 +21,7 @@ export default {};
   position: relative;
 }
 
-.homeBanner h1 {
-  width: 100%;
-  text-align: center;
+.homeBanner h1 {  
   position: absolute;
   left: 50%;
   top: 50%;
@@ -34,9 +32,7 @@ export default {};
   color: #b09c70;
 }
 .homeBanner h6 {
-  position: absolute;
-  width: 100%;
-  text-align: center;
+  position: absolute; 
   left: 50%;
   bottom: 80px;
   -webkit-transform: translate(-50%, -50%);

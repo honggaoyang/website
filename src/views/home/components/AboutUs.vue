@@ -74,16 +74,16 @@ export default {
   bottom: -20px;
   z-index: -1;
 }
-.aboCon .btn { 
+.aboCon .btn {
   background-color: #b09c70;
   color: #ffffff;
-  text-align: center; 
+  text-align: center;
   font-weight: bold;
   font-size: 14px;
   position: absolute;
   bottom: 70px;
   left: -62px;
-  cursor: pointer; 
+  cursor: pointer;
   padding: 8px 40px;
 }
 .aboItems {
@@ -111,11 +111,13 @@ export default {
   color: #333333;
   font-weight: bold;
   line-height: 50px;
+  display: inline-block;
 }
 
 .aboItems .item span:nth-child(3) {
   color: #aaaaaa;
   line-height: 25px;
+  display: inline-block;
 }
 
 /* 小于768 */

@@ -34,7 +34,7 @@ export default {
         autoplay: true, //自动播放
         fade: false, //淡化切换
         speed: 500, //动画时间
-        autoplaySpeed: 3000, //间隔时间
+        autoplaySpeed: 300000, //间隔时间
       },
       serList: [
         {
@@ -90,6 +90,7 @@ export default {
 }
 .serText {
   padding: 30px;
+  max-width: 620px;
 }
 .serText h3 {
   color: #333333;
@@ -99,6 +100,7 @@ export default {
   color: #aaaaaa;
   font-size: 14px;
   margin: 25px 0 35px;
+  line-height: 26px;
 }
 .serText div {
   width: 96px;
