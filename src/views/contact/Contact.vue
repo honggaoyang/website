@@ -4,23 +4,23 @@
     <div class="pubCon">
       <div class="contactCon">
         <div class="lfInfo">
-          <h1>上海魅雅文化传媒有限公司</h1>
-          <h2>Shanghai Meiya culture media Co., Ltd</h2>
+          <h1>艾尼斯美妆培训连锁</h1>
+          <h2>AINISI BEAUTY MAKE UP CHAIN</h2>
           <div class="line"></div>
           <p>
             <a href="###"
-              ><i class="fa fa-institution"></i><span>艾尼斯</span></a
+              ><i class="fa fa-institution fa-lg"></i><span>艾尼斯</span></a
             >
           </p>
           <p>
             <a href="###"
               ><i class="fa fa-map-marker"></i
-              ><span>中国北京市东城区某某大厦8-88室</span></a
+              ><span>苏州市相城区春申湖西路903号</span></a
             >
           </p>
           <p>
-            <a href="tel:88888888"
-              ><i class="fa fa-phone"></i><span>88888888</span></a
+            <a href="tel:4009699180"
+              ><i class="fa fa-phone"></i><span>400-9699-180</span></a
             >
           </p>
           <p>
@@ -106,7 +106,9 @@ export default {
   text-decoration: none;
 }
 .contactCon .lfInfo i {
-  font-size: 22px;
+  font-size: 1em; 
+  width: 30px;
+  text-align: center;
 }
 .contactCon .lfInfo a span {
   padding-left: 10px;
@@ -127,7 +129,7 @@ export default {
 
 .mapCon {
   width: 100%;
-  height: 300px; 
+  height: 300px;
 }
 
 /* 1200px*/
@@ -190,7 +192,6 @@ export default {
     width: 90%;
     margin: auto;
     height: 300px;
-    background-color: blue;
   }
 }
 </style>
