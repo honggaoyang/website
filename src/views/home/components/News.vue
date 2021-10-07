@@ -64,8 +64,7 @@ export default {
 
 .new {
   width: 30%;
-  border-right: 1px solid;
-  border-right-color: #aaaaaa;
+  border-right: 1px solid #DDDDDD; 
   padding: 0 40px;
 }
 .new:last-child {
