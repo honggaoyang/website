@@ -30,6 +30,7 @@ export default {};
   transform: translate(-50%, -50%);
   font-size: 70px;
   color: #b09c70;
+  text-align: center;
 }
 .homeBanner h6 {
   position: absolute; 
@@ -41,5 +42,6 @@ export default {};
   font-size: 28px;
   font-weight: 400;
   color: #f5f5f5;
+  text-align: center;
 }
 </style>

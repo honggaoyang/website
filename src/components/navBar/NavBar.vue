@@ -110,7 +110,7 @@ export default {
     top: 80px;
     width: 50vw;
     background-color: #2b2b2b;
-    opacity: 0;
+    /* opacity: 0; */
     -webkit-animation: slideDown 0.5s ease-out 0s 1 normal forwards;
     animation: slideDown 0.5s ease-out 0s 1 normal forwards;
   }
