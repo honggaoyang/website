@@ -89,6 +89,13 @@ export default {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.ftItem,
+.ewm {
+  width: 25%;
+  text-align: center;
 }
 .ftItem h6 {
   height: 50px;
@@ -111,6 +118,7 @@ export default {
 .ewm img {
   width: 110px;
   height: 110px;
+  vertical-align: middle;
 }
 .copyright {
   width: 100%;
@@ -150,11 +158,12 @@ export default {
   .footCont {
     max-width: 580px;
   }
+  .ftItem,
+  .ewm {
+    width: 50%;
+    text-align: center;
+  }
   .footCont {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
