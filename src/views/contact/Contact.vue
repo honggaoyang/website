@@ -173,9 +173,9 @@ export default {
     margin: 20px 0 35px;
   }
   .contactCon .rtForm {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+    -webkit-box-flex: none;
+    -ms-flex: none;
+    flex: none;
     background-color: #b09c70;
     color: #f5f5f5;
     padding: 40px 0px;

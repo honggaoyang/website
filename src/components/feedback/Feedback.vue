@@ -16,6 +16,7 @@ export default {};
 .formInfo {
   max-width: 500px;
   margin: auto;
+  background-color: #b09c70;
 }
 .formInfo input,
 .formInfo textarea {
