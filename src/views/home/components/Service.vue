@@ -11,7 +11,7 @@
           <div class="serText">
             <h3>{{ item.title }}</h3>
             <p>{{ item.content }}</p>
-            <div>点击</div>
+            <div class="fa fa-long-arrow-right"></div>
           </div>
         </div>
       </vue-slick-carousel>

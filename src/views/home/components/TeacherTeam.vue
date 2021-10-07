@@ -14,12 +14,14 @@
             <span class="job">{{ item.job }}</span>
           </div>
           <div class="toDetail">
-            <i class="fa fa-arrow-right"></i>
+            <router-link to="/teacher"
+              ><i class="fa fa-arrow-right"></i
+            ></router-link>
           </div>
         </div>
       </div>
     </div>
-    <div class="moreBtn">MORE</div>
+    <router-link to="/teacher"><div class="moreBtn">MORE</div></router-link>
   </section>
 </template>
 
@@ -52,7 +54,7 @@ export default {
 };
 </script>
 
-<style scoped> 
+<style scoped>
 .teaCon {
   padding-bottom: 50px;
 }
@@ -105,7 +107,10 @@ export default {
   color: #f5f5f5;
   font-weight: bold;
 }
-.teaBox .info .toDetail:hover {
+.teaBox .info .toDetail a {
+  color: #b09c70;
+}
+.teaBox .info .toDetail a:hover {
   color: #f5f5f5;
   cursor: pointer;
 }

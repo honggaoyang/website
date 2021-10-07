@@ -10,7 +10,7 @@
       <div class="rt">
         <img src="@/assets/banner.jpg" alt="" />
         <div class="boxLine"></div>
-        <div class="btn">按钮</div>
+        <router-link to="/about"><div class="btn fa fa-long-arrow-right"></div></router-link>
       </div>
     </div>
     <!-- 分类区域 -->
@@ -77,14 +77,17 @@ export default {
 .aboCon .btn {
   background-color: #b09c70;
   color: #ffffff;
-  text-align: center;
-  font-weight: bold;
+  text-align: center; 
   font-size: 14px;
   position: absolute;
   bottom: 70px;
   left: -62px;
   cursor: pointer;
   padding: 8px 40px;
+  transition: 0.2s;
+}
+.aboCon .btn:hover {
+  background-color: #CEB989; 
 }
 .aboItems {
   display: -webkit-box;

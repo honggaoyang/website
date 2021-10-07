@@ -14,7 +14,7 @@
           </p>
         </div>
       </div>
-      <div class="moreBtn">MORE</div>
+      <router-link to="/course"><div class="moreBtn">MORE</div></router-link>
     </section>
   </div>
 </template>

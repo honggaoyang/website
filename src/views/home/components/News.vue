@@ -14,7 +14,7 @@
           <p class="new-date">{{ item.date }}</p>
         </div>
       </div>
-      <div class="moreBtn">MORE</div>
+      <router-link to="/news"><div class="moreBtn">MORE</div></router-link>
     </section>
   </div>
 </template>

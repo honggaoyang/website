@@ -10,6 +10,16 @@ router.beforeEach((to, from, next) => {
   next()
 })
 
+// 跳转之后返回顶部
+router.afterEach(() => {
+  // chrome
+  // document.body.scrollTop = 0
+  // firefox
+  document.documentElement.scrollTop = 0
+  // safari
+  // window.pageYOffset = 0 
+})
+
 
 Vue.config.productionTip = false
 
